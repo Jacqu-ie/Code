@@ -22,7 +22,7 @@ body.menu-open {
   height: 100vh;
   height: 100dvh;
   padding: 88px 28px 28px;
-  background-color: #fff7ed;
+  background-color: var(--color-background);
   box-shadow: -8px 0 24px rgb(82 28 38 / 12%);
   transform: translateX(100%);
   visibility: hidden;
@@ -37,12 +37,6 @@ body.menu-open {
 }
 
 /* Présentation verticale des liens dans la sidebar mobile. */
-.header-navigation a {
-  text-decoration: none;
-  color: #521c26;
-  font-size: 16px;
-  font-weight: 600;
-}
 
 .header-menu-backdrop {
   position: fixed;

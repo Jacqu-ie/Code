@@ -3,3 +3,28 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Sour Gummy", sans-serif;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+:root {
+  --color-background: #fcf5eb;
+  --color-text: #4c121a;
+  --color-accent: #d20062;
+  --color-pink-background: #fac4d2;
+  --color-blue-background: #cce8ef;
+}
