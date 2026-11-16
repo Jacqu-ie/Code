@@ -1,7 +1,29 @@
-.hero {
-  background-image: url("img/hero-img.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #ff0000;
+.l-hero {
+  width: 100%;
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-logo {
+  position: absolute;
+  width: 35%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-btn-reservation {
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
