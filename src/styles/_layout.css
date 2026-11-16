@@ -1,0 +1,19 @@
+.l-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #fff7ed;
+}
+/* Dentelle */
+
+.l-header-dentelle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(95%);
+  display: block;
+}
