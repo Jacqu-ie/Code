@@ -8,21 +8,37 @@
   </head>
   <body>
     <header class="l-header">
+      <!-- Logo du site, affiché dans l'en-tête. -->
       <img src="img/logo-line.svg" class="header-logo" alt="logo" />
 
-      <nav class="header-navigation">
+      <!-- Navigation partagée : en ligne sur grand écran, en sidebar sur mobile. -->
+      <nav class="header-navigation" id="header-navigation">
         <a href="#">Menu</a>
         <a href="#">À propos</a>
         <a href="#">Horaires</a>
         <a href="#">Réservation</a>
         <a href="#">Commande</a>
       </nav>
-      <button class="header-burger" aria-label="Ouvrir le menu">
+      <!-- aria-label nomme l'action du bouton pour les lecteurs d'écran. -->
+      <button
+        class="header-burger"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-controls="header-navigation"
+        aria-expanded="false"
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
+      <!-- aria-label explique aux lecteurs d'écran que ce bouton referme la sidebar. -->
+      <button
+        class="header-menu-backdrop"
+        type="button"
+        aria-label="Fermer le menu"
+      ></button>
 
+      <!-- Décoration placée sous l'en-tête. -->
       <img src="img/dentelle.svg" class="l-header-dentelle" alt="dentelle" />
     </header>
 
@@ -34,5 +50,7 @@
         </div>
       </div>
     </main>
+    <!-- Charge les interactions du bouton burger et de la sidebar. -->
+    <script src="script.js" defer></script>
   </body>
 </html>
