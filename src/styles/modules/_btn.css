@@ -7,7 +7,7 @@
   padding: 16px 24px;
   justify-content: center;
   align-items: center;
-  border-radius: var(--radius, 32px);
+  border-radius: 32px;
   background: var(--accent, #d20062);
   color: var(--background, #fcf5eb);
   width: 35%;

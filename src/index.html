@@ -100,6 +100,89 @@
           alt=""
         />
       </article>
+
+      <!-- Section de réservation et titre associé. -->
+      <section class="l-reservation">
+        <!-- Titre de la réservation. -->
+        <h2 class="reservation-title">Réserver une table</h2>
+
+        <!-- Formulaire de réservation. -->
+        <form class="reservation-form" action="#" method="post">
+          <!-- Groupe des coordonnées de la personne. -->
+          <div class="reservation-fields">
+            <!-- Champ de saisie du nom. -->
+            <div class="reservation-field">
+              <label class="reservation-label" for="name"> Nom </label>
+              <input
+                class="reservation-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Camille Martin"
+                required
+              />
+            </div>
+
+            <!-- Champ de saisie de l'adresse e-mail. -->
+            <div class="reservation-field">
+              <label class="reservation-label" for="email"> E-mail </label>
+              <input
+                class="reservation-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="camille@exemple.ch"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Groupe des détails de réservation. -->
+          <div class="reservation-details">
+            <!-- Champ de sélection de la date. -->
+            <div class="reservation-field">
+              <label class="reservation-label" for="date"> Date </label>
+              <input
+                class="reservation-input"
+                type="date"
+                id="date"
+                name="date"
+                required
+              />
+            </div>
+
+            <!-- Champ de sélection de l'heure. -->
+            <div class="reservation-field">
+              <label class="reservation-label" for="time"> Heure </label>
+              <input
+                class="reservation-input"
+                type="time"
+                id="time"
+                name="time"
+                value="19:00"
+                required
+              />
+            </div>
+
+            <!-- Champ de sélection du nombre de personnes. -->
+            <div class="reservation-field">
+              <label class="reservation-label" for="guests"> Personnes </label>
+              <input
+                class="reservation-input"
+                type="number"
+                id="guests"
+                name="guests"
+                min="1"
+                value="2"
+                required
+              />
+            </div>
+          </div>
+
+          <!-- Bouton d'envoi du formulaire. -->
+          <button class="reservation-button" type="submit">Réserver</button>
+        </form>
+      </section>
     </main>
 
     <footer class="l-footer footer">

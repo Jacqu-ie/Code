@@ -31,3 +31,15 @@
 .l-adress {
   position: relative;
 }
+
+.l-reservation {
+  margin: 20rem;
+  display: flex;
+  min-width: 23.4375rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 2rem;
+  border: 34px solid var(--color-blue-background);
+  background: var(--color-background);
+}

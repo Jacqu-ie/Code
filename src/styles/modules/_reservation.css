@@ -1,0 +1,50 @@
+.reservation-form {
+  display: flex; /* Organise les groupes et le bouton dans un conteneur flex. */
+  flex-direction: column; /* Empile les éléments du formulaire verticalement. */
+  gap: 2rem; /* Espace les groupes de champs et le bouton de 2rem. */
+}
+
+.reservation-input {
+  display: flex;
+  width: 100%; /* Étend le champ sur toute la largeur disponible. */
+  height: 3rem; /* Uniformise la hauteur des champs. */
+  padding: 0 1rem;
+  -webkit-appearance: none; /* Retire le style natif dans les navigateurs WebKit. */
+  appearance: none; /* Retire le style natif du navigateur. */
+  border: none; /* Supprime la bordure native. */
+  border-radius: 2rem; /* Arrondit les coins du champ. */
+  background: var(
+    --color-pink-background,
+    #fac4d2
+  ); /* Applique le fond rose. */
+  color: var(--color-text); /* Applique la couleur du texte des champs. */
+}
+
+/* Cible le texte indicatif affiché avant la saisie dans le champ. */
+.reservation-input::placeholder {
+  color: var(--color-text); /* Aligne la couleur du placeholder sur le texte. */
+  opacity: 1; /* Empêche le navigateur d'atténuer le placeholder. */
+}
+.reservation-label {
+  font-size: 0.875rem;
+  line-height: 140%; /* 1.225rem */
+}
+
+.reservation-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 110%; /* 2.2rem */
+}
+
+.reservation-button {
+  display: flex; /* Organise le contenu du bouton avec Flexbox. */
+  width: fit-content; /* Limite la largeur au texte et au padding du bouton. */
+  padding: 1rem 1.5rem; /* Définit l'espace intérieur du bouton. */
+  border: none; /* Supprime le contour natif du bouton. */
+  border-radius: 2rem; /* Arrondit les coins du bouton. */
+  background: var(--color-accent); /* Applique le rose d'accent du thème. */
+  color: var(
+    --color-pink-background
+  ); /* Colore le texte avec le rose clair du thème. */
+}
