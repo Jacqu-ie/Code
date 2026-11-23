@@ -18,3 +18,16 @@
   transform: translateY(95%);
   display: block;
 }
+.l-adress {
+  background-color: var(--color-pink-background);
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+
+/* Positionne les images décoratives aux bords sans perturber la mise en page flex. */
+.l-adress {
+  position: relative;
+}
