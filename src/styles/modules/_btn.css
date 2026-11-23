@@ -1,0 +1,22 @@
+.btn-reservation {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius, 32px);
+  background: var(--accent, #d20062);
+  color: var(--background, #fcf5eb);
+  width: 35%;
+}
+
+@media (max-width: 1024px) {
+  .btn-reservation {
+    top: 75%;
+    width: 70%;
+    max-width: 400px;
+  }
+}
